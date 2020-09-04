@@ -5,9 +5,9 @@
 
 :root{
     /* colors */
-    --primary:#1e3148;
-    --secondary: #ffcb73;
-    --text-color:#fff;
+    --primary:#1e3148 !important;
+    --secondary: #ffcb73 !important;
+    --text-color:#fff !important;
 }
 *{
     font-family: 'Roboto', sans-serif;    
@@ -18,7 +18,43 @@
 3.- section service
 *****/
 /**************************** Navbar ************************************/
-.nav-bar{
+.navbar{
+    padding: 0px !important;
+}
+.navbar-brand{
+ color: var(--secondary) !important;
+}
+.navbar-light button.navbar-toggler{
+color: #ffcb73!important;
+border-color: #ffcb73!important;
+}
+.navbar-toggler-icon{
+    color: var(--secondary) !important;
+}
+.bg-custom{
+    background: var(--primary) !important;
+}
+/* .nav-item{
+    padding: 1rem;
+} */
+.nav-link {
+    display: block;
+    padding: 0.75rem 1rem !important;
+}
+li a{
+    color:var(--secondary) !important;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: var(--secondary); 
+    text-shadow: 2px 2px 20px #E0E0E0;
+    
+}
+li :hover{
+    border-bottom: 4px solid var(--secondary);
+}
+/* .nav-bar{
     background: var(--primary);
     position: fixed;
     width: 100%;
@@ -54,12 +90,12 @@ li a:hover{
 
 li:hover{
    /*  background-color: var(--secondary); */
-    border-bottom: 4px solid var(--secondary);
-    color: var(--secondary);
+    /* border-bottom: 4px solid var(--secondary);
+    color: var(--secondary); */
    /*  -webkit-box-shadow: inset -16px -18px 16px -12px rgba(0,0,0,0.36);
     -moz-box-shadow: inset -16px -18px 16px -12px rgba(0,0,0,0.36);
     box-shadow: inset -16px -18px 16px -12px rgba(0,0,0,0.36); */
-}
+/*} */
 /* sections */
 /******************************** 1.- Initials **************************************************/
 section.initial{
@@ -72,7 +108,7 @@ section.initial{
 }
 
 .initial div {
-    margin-top:20%;
+    margin-top:8%;
 /*     margin-left:15%; */
     color:var(--text-color);
     
@@ -122,8 +158,8 @@ animation-duration: 2s; /* don't forget to set a duration! */
     
 }
 .wrap-service{
-    display: flex;
-    flex-direction: row;
+   /*  display: flex;
+    flex-direction: row; */
     background-color: var(--primary);
     color: var(--secondary);
     /* flex-wrap: wrap;
@@ -132,24 +168,29 @@ animation-duration: 2s; /* don't forget to set a duration! */
 }
  .service-rigth{
     width: 200px;
-    flex-grow: 2;
+    /* flex-grow: 2; */
     padding: 2rem;
 
 
 }
 .service-left{
- flex-grow: 2;
+/*  flex-grow: 2; */
  
     color:var(--secondary);
     padding: 2rem;
 }
 img.img-service{
-    height: 70vh;
-    margin: 2rem;
+    /* height: 70vh */
+   /*  margin: 1srem; */
 }
 /********************************************FOOTER*************************************************************/
 
 footer{
     background-color: var(--primary);
     height: 100vh;
+    color: var(--text-color);
+/*     position: ; */
+}
+footer p {
+    text-align: center;
 }
